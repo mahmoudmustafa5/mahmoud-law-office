@@ -7,6 +7,7 @@ const office = {
   address: 'سوهاج، ساقلتة، الجلاوية، نجع عباسة',
 };
 
+
 const services = [
   {
     number: '01',
@@ -151,40 +152,42 @@ function App() {
             تُعرض الخدمات وفقًا للتخصصات الفعلية للمكتب، ويُحدد نطاق كل خدمة بعد مراجعة الحالة.
           </p>
         </section>
+<section className="contact-section" id="contact">
+  <div>
+    <span className="section-kicker">إدارة المكتب</span>
+    <h2>ابدأ بخطوة واضحة.</h2>
+    <p>
+      للاستفسار عن الخدمات أو طلب موعد، تواصل مع المكتب مباشرة.
+    </p>
+  </div>
 
-        <section className="contact-section" id="contact">
-          <div>
-            <span className="section-kicker">تواصل معنا</span>
-            <h2>ابدأ بخطوة واضحة.</h2>
-            <p>
-              للاستفسار عن الخدمات أو طلب موعد، تواصل مع المكتب مباشرة.
-            </p>
-          </div>
-          <a
-            className="button-primary"
-            href={`https://wa.me/${office.whatsapp1}`}            target="_blank"
-            rel="noreferrer"
-          >
-             واتساب الاول <span>↗</span>
-                      <a
-            className="button-primary"
-            href={`https://wa.me/${office.whatsapp2}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            واتساب الثاني <span>↗</span>
-          </a>
+  <a
+    className="button-primary"
+    href={`https://wa.me/${office.whatsapp2}`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    01153421350 <span>↗</span>
+  </a>
 
-          <a
-            className="button-secondary"
-            href={office.facebook}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            صفحة فيسبوك <span>↗</span>
-          </a>
-          </a>
-        </section>
+  <a
+    className="button-primary"
+    href={`https://wa.me/${office.whatsapp1}`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    01001766092 <span>↗</span>
+  </a>
+
+  <a
+    className="button-secondary"
+    href={office.facebook}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    صفحة فيسبوك <span>↗</span>
+  </a>
+</section>
       </main>
 
       <footer className="footer">
